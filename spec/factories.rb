@@ -13,4 +13,9 @@ FactoryBot.define do
     name "Ilana"
   end
 
+  factory :user, class: User do
+    username "cornelius"
+    password "123"
+  end
+
 end
