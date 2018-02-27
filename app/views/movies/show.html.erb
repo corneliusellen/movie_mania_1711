@@ -5,8 +5,10 @@
 
 <p>Awards for this Movie:</p>
 <% @movie.movie_awards.each do |movie_award| %>
+<% binding.pry %>
   <%= movie_award.year %>
 <% end %>
+
 <% @movie.awards.each do |award| %>
   <%= award.title %>
 <% end %>
