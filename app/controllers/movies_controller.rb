@@ -7,7 +7,7 @@ class MoviesController < ApplicationController
   end
 
   def show
-    # @movie = Movie.find_by(slug: params[:slug])
+    @movie = Movie.find_by(slug: params[:slug])
   end
 
   def new
