@@ -1,0 +1,6 @@
+<%= form_for @award, as: :post, url: :admin_awards do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.submit "Create"  %>
+<% end %>
