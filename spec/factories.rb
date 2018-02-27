@@ -18,4 +18,7 @@ FactoryBot.define do
     password "123"
   end
 
+  factory :award, class: Award do
+    title "Emmy"
+  end 
 end
