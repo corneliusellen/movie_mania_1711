@@ -6,6 +6,8 @@ class Movie < ApplicationRecord
   has_many :actor_movies
   has_many :actors, through: :actor_movies
 
+  has_many :movie_awards
+  has_many :awards, through: :movie_awards
 
   def generate_slug
     self.slug = title.parameterize
